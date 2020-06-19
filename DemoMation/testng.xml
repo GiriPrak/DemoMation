@@ -3,7 +3,7 @@
 <suite name="Suite1" verbose="1" >
   <test name="Regression1">
     <classes>
-      <class name="api.rest.assured.TcGetRequest"/>
+      <class name="org.qa.tests.SampleTest"/>
     </classes>
   </test>
 </suite>
