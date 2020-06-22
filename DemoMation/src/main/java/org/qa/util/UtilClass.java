@@ -74,7 +74,7 @@ public class UtilClass {
 	public void tearDown() throws IOException {
 
 		extent.flush();
-		//		driver.quit();
+		driver.quit();
 
 	}
 
