@@ -33,21 +33,21 @@ public class TestCases extends UtilClass {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("s2id_location_from"))).click();
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("location_from"))).sendKeys("CCD");
 		testReport.log(Status.PASS,"Source location selected");
-		Thread.sleep(1500);
+		Thread.sleep(1500);//instead of Thread.sleep we can do a betterment of the code by waiting till "searching ..." will disappear;
 		{
 			Actions action = new Actions(driver);
 			action.sendKeys(Keys.ENTER).build().perform();
 		}
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("s2id_location_to"))).click();
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("location_to"))).sendKeys("JFK");
-		Thread.sleep(1500);
+		Thread.sleep(1500); //instead of Thread.sleep we can do a betterment of the code by waiting till "searching ..." will disappear;
 		{
 			Actions action = new Actions(driver);
 			action.sendKeys(Keys.ENTER).build().perform();
 		}
 		testReport.log(Status.PASS,"Destination location selected");
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("FlightsDateStart"))).click();
-		Thread.sleep(1500);
+		Thread.sleep(1500); //instead of Thread.sleep we can do a betterment of the code  to see calander is open ;
 
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[8]/div/div/div[2]/div[26]"))).click();
 		testReport.log(Status.PASS,"From date selected");
