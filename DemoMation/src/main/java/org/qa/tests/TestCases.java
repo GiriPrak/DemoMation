@@ -14,7 +14,7 @@ import com.aventstack.extentreports.Status;
 
 public class TestCases extends UtilClass {
 
-	@Test(enabled=false)
+	@Test(enabled=true)
 	public void BookAFlight() throws InterruptedException
 	{
 		driver.get("https://phptravels.net/home");
